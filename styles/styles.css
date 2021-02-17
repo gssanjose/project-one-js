@@ -301,6 +301,46 @@ nav a:hover {
   width: 400px;
 }
 
+header nav .ham-menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  left: 0;
+  top: 80px;
+  background-color: #f5f5f5;
+  z-index: 10;
+  opacity: 1;
+}
+
+header nav .ham-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border: 1px solid black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav .ham-menu li:hover {
+  background-color: #f8fb05;
+}
+
 .index-page header {
   background-image: url(../sanctuary-helpers/assets/header-home.jpg);
 }
@@ -981,6 +1021,12 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+  .index-page ul {
+    position: absolute;
+    left: 0;
+    top: -200px;
+    opacity: 0;
+  }
   .index-page header {
     max-height: 350px;
     min-height: 70px;
@@ -989,9 +1035,6 @@ nav a:hover {
   }
   .index-page header nav {
     margin: 0;
-  }
-  .index-page header nav ul {
-    display: none;
   }
   .index-page header h1 {
     margin: 100px 0 0;
@@ -1083,6 +1126,12 @@ nav a:hover {
 }
 
 @media (max-width: 720px) {
+  .blog-page ul {
+    position: absolute;
+    left: 0;
+    top: -200px;
+    opacity: 0;
+  }
   .blog-page header .hamburger {
     display: inline-block;
     font-size: 4rem;
@@ -1090,8 +1139,8 @@ nav a:hover {
   .blog-page header nav {
     margin: 0;
   }
-  .blog-page header nav ul {
-    display: none;
+  .blog-page .header-container nav ul {
+    width: 100%;
   }
   .blog-page aside {
     -webkit-box-orient: vertical;
@@ -1180,6 +1229,12 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
+  .contact-page ul {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    opacity: 0;
+  }
   .contact-page header .hamburger {
     display: inline-block;
     font-size: 4rem;
@@ -1187,8 +1242,8 @@ nav a:hover {
   .contact-page header nav {
     margin: 0;
   }
-  .contact-page header nav ul {
-    display: none;
+  .contact-page .header-container nav ul {
+    width: 100%;
   }
   .contact-page .main-container {
     min-width: auto;

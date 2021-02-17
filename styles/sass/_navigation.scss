@@ -47,4 +47,32 @@ nav {
     }   
 }  
 
-
+header {
+    nav {
+        .ham-menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 30vh;
+            text-align: center;
+            left: 0;
+            top: 80px;
+            background-color: $white;
+            z-index: 10;
+            opacity: 1;
+            
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                border: 1px solid black;
+                transition: 0.5s;
+                &:hover {
+                    background-color: $yellow;
+                }
+            }
+        }
+    }
+}

@@ -168,20 +168,22 @@
 
    @media (max-width: 480px){
 
+      ul {
+         position: absolute;
+         left: 0;
+         top: -200px;
+         opacity: 0;
+      }
+
       header {
-
          max-height: 350px;
-
-         nav {
-            margin: 0;
-
-            ul {
-               display: none;
-            }
-         }
          min-height: 70px;
          height: 50vh;
          margin-bottom: 20px;
+
+         nav {
+            margin: 0;
+         }
          
          h1 {
             margin: 100px 0 0;
@@ -306,17 +308,29 @@
 
    @media (max-width: 720px) {
 
+      ul {
+         position: absolute;
+         left: 0;
+         top: -200px;
+         opacity: 0;
+      }
+
       header {
 
          .hamburger {
             display: inline-block;
             font-size: 4rem;
          }
-
+         
          nav {
             margin: 0;
+         }
+      }
+
+      .header-container {
+         nav {
             ul {
-               display: none;
+               width: 100%;
             }
          }
       }
@@ -355,6 +369,7 @@
    @media (max-width: 480px) {
 
       header {
+         
          h1 {
             font-size: 8vw;
             margin-top: 150px;
@@ -440,6 +455,13 @@
 
    @media (max-width: 700px) {
 
+      ul {
+         position: absolute;
+         top: -200px;
+         left: 0;
+         opacity: 0;
+      }
+
       header {
 
          .hamburger {
@@ -449,8 +471,13 @@
 
          nav {
             margin: 0;
+         }
+      }
+
+      .header-container {
+         nav {
             ul {
-               display: none;
+               width: 100%;
             }
          }
       }
